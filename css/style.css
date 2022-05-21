@@ -106,6 +106,12 @@ button {
   cursor: pointer;
 }
 
+a:active,
+button:active {
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -586,6 +592,9 @@ body {
     font-size: 18px;
   }
 }
+.hero__button:active {
+  background-color: #7e412d;
+}
 .hero__person {
   position: relative;
   max-width: 560px;
@@ -1046,6 +1055,9 @@ body {
   .form__button {
     max-width: 100%;
   }
+}
+.form__button:active {
+  background-color: #092930;
 }
 
 .footer {
