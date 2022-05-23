@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio Zhevaha Viacheslav</title>
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220522183218">
 </head>
 
 <body>
@@ -44,7 +44,7 @@
 								</li>
 
 								<li class="menu__item">
-									<a class="menu__link hover"
+									<a class="menu__link hover goto" data-goto=".resume"
 										href="https://docs.google.com/document/d/1HhhSSKIqXhmBj3Tg7lnHLy_vGWsPlIGAZ8wBArjFNRo/edit?usp=sharing"
 										tabindex="6" target="blank">Resume</a>
 								</li>
@@ -95,7 +95,10 @@
 							</button>
 						</div>
 						<div class="hero__person">
-							<img class="hero__img" src="img/about/porter-manhatan.jpg" alt="Портрет Вячеслав Жевага в Нью Йорке">
+							<picture>
+								<source srcset="img/about/porter-manhatan.webp" type="image/webp"><img class="hero__img"
+									src="img/about/porter-manhatan.jpg" alt="Портрет Вячеслав Жевага в Нью Йорке">
+							</picture>
 						</div>
 					</div>
 				</div>
@@ -288,8 +291,8 @@
 										</picture>
 									</a>
 								</li>
+								<div class="slider-portfolio__pagination"></div>
 							</ul>
-							<div class="slider-portfolio__pagination"></div>
 						</div>
 					</div>
 
@@ -312,22 +315,23 @@
 					<div class="contacts__content">
 						<form class="contacts__form form" action="#">
 							<label class="form__label label">
-								<input class="form__input form__input--name" type="text" name="name" data-validate-field="name"
-									autocomplete="off" placeholder="Name" required>
+								<input class="form__input form__input--name _req" type="text" name="name" data-validate-field="name"
+									autocomplete="off" placeholder="Name">
 							</label>
 
 							<label class="form__label label">
-								<input class="form__input form__input--phone" type="tel" name="tel" data-validate-field="tel"
-									autocomplete="off" placeholder="Phone" required>
+								<input class="form__input form__input--phone _tel _req" type="tel" name="tel" data-validate-field="tel"
+									autocomplete="off" placeholder="Phone">
 							</label>
 
 							<label class="form__label label">
-								<input class="form__input form__input--email" type="email" name="email" data-validate-field="email"
-									autocomplete="off" placeholder="E-mail" required>
+								<input class="form__input form__input--email _email _req" type="email" name="email"
+									data-validate-field="email" autocomplete="off" placeholder="E-mail">
 							</label>
 
 							<label class="form__label label">
-								<textarea class="form__input form__input--text" placeholder="Your message"></textarea>
+								<textarea class="form__input form__input--text" type="message" name="message"
+									placeholder="Your message"></textarea>
 							</label>
 
 							<button class="form__button btn btn--white" type="submit">
@@ -407,9 +411,7 @@
 		</footer>
 	</div>
 
-
-
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20220522183218"></script>
 </body>
 
 </html>
