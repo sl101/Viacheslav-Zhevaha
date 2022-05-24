@@ -18,7 +18,7 @@
 	$mail->Subject = 'New request from portfolio site';
 
 	//Тело письма
-	$body = '<h1>Встречайте супер письмо!</h1>';
+	$body = '<h1>Запрос контакта с сайта портфолио...</h1>';
 
 	if(trim(!empty($_POST['name']))){
 		$body.='<p><strong>Name:</strong> '.$_POST['name'].'</p>';
